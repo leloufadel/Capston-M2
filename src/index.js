@@ -14,12 +14,11 @@ const fetchAPI = async () => {
     const showImage = show.image.medium; 
 
     const listItem = document.createElement('li');
-    listItem.classList.add('shows-movie');
+    //listItem.classList.add('shows-movie');
     listItem.innerHTML = `
-      <h2>${showTitle}</h2>
-      <img src="${showImage}" alt="${showTitle}">
      
-      <a href="${showURL}" target="_blank">${showURL}</a>
+      <img src="${showImage}" alt="${showTitle}">
+      <h2 class="title">${showTitle}</h2>
       <hr>
     `;
 
