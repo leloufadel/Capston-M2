@@ -1,5 +1,6 @@
 import './style.css';
-//API_KEY = '40xQQTkeHEs9D9wNQTQX0YGfyh2aoT-w';
+// API_KEY = '40xQQTkeHEs9D9wNQTQX0YGfyh2aoT-w';
+
 const fetchAPI = async () => {
   const baseURL = 'https://api.tvmaze.com/shows';
   const response = await fetch(baseURL);
@@ -8,13 +9,12 @@ const fetchAPI = async () => {
 
   // Display the show list in the HTML
   const showListContainer = document.getElementById('show-list');
-  shows.forEach(show => {
+  shows.forEach((show) => {
     const showTitle = show.name;
-    const showURL = show.url;
-    const showImage = show.image.medium; 
+    const showImage = show.image.medium;
 
     const listItem = document.createElement('li');
-    //listItem.classList.add('shows-movie');
+    // listItem.classList.add('shows-movie');
     listItem.innerHTML = `
      
       <img src="${showImage}" alt="${showTitle}">
@@ -26,4 +26,4 @@ const fetchAPI = async () => {
   });
 };
 
-fetchAPI().catch(error => console.log(error));
+fetchAPI().catch((error) => console.log(error));
