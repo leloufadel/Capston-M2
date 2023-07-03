@@ -34,13 +34,12 @@ const fetchAPI = async () => {
     let likesCount = 0;
 
     likeButton.addEventListener('click', () => {
-      likesCount++;
+      likesCount += 1;
       likesCounter.textContent = likesCount;
     });
 
     showListContainer.appendChild(listItem);
   });
 };
-
 
 fetchAPI().catch((error) => console.log(error));
