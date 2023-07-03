@@ -28,9 +28,19 @@ const fetchAPI = async () => {
           </div>
       <hr>
     `;
+    const likeButton = listItem.querySelector('.like');
+    const likesCounter = listItem.querySelector('.likes');
+
+    let likesCount = 0;
+
+    likeButton.addEventListener('click', () => {
+      likesCount++;
+      likesCounter.textContent = likesCount;
+    });
 
     showListContainer.appendChild(listItem);
   });
 };
+
 
 fetchAPI().catch((error) => console.log(error));
