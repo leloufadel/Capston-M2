@@ -9,7 +9,6 @@ body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background-color: #eaecec;
   color: #fefefe;
-  font-weight: 700px;
 }
 
 header {
@@ -18,11 +17,12 @@ header {
   justify-content: space-between;
   padding: 1rem 1rem;
 }
-.title{
-  font-size: x-large; 
 
+.title {
+  font-size: x-large;
   color: rgb(61, 58, 58);
 }
+
 ul {
   list-style: none;
   display: flex;
@@ -68,7 +68,6 @@ a:hover {
   color: #6606a5;
 }
 
-
 hr {
   width: 100%;
   margin-top: 10px;
@@ -84,7 +83,6 @@ footer {
   border-top: 1px solid rgb(48, 45, 45);
   color: #0a0101;
   background-color: white;
-  
 }
 
 footer p {
