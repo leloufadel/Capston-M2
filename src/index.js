@@ -19,6 +19,13 @@ const fetchAPI = async () => {
      
       <img src="${showImage}" alt="${showTitle}">
       <h2 class="title">${showTitle}</h2>
+      <div class="interact">
+      <button class="comments">comment</button>
+      <div>
+      <div>
+        <i class="like fa-regular fa-heart" data-show-id="${show.name}"></i>
+        <span class="likes" data-shows-id="${show.name}"></span>
+          </div>
       <hr>
     `;
 

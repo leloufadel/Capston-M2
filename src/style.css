@@ -1,23 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  background-color: #eaecec;
-  color: #fefefe;
+  margin: 0; /* Remove default body margin */
+  font-size: large;
 }
 
 header {
-  background: #413c3c;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem;
+  margin-bottom: 1rem; /* Add margin at the bottom */
+    background: #413c3c;
+    display: flex;
+    justify-content: space-between;
+    color :white;
+    padding: 1rem 1rem;
 }
-
 .title {
   font-size: x-large;
   color: rgb(61, 58, 58);
@@ -41,51 +34,35 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  padding: 10rem;
+  padding: 2rem; /* Reduce the padding */
   list-style-type: none;
 }
 
-/* .shows-movie {
+.interact {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5em;
-} */
-
-img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 10px;
+  align-items: center; /* Align comment and like button vertically */
+  gap: 2rem;
+  margin-top: 0.5rem; /* Add margin at the top */
 }
 
-a {
-  text-decoration: none;
-  color: #141414;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #6606a5;
-}
-
-hr {
-  width: 100%;
-  margin-top: 10px;
+.comments {
+  background-color: #979ba1;
+  color: #fff;
   border: none;
-  border-top: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-footer {
-  height: 17vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgb(48, 45, 45);
-  color: #0a0101;
-  background-color: white;
+.like {
+  color: #dc3545;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #ffebee;
+  padding: 0.5rem; /* Adjust padding for like button */
+  border-radius: 10px;
 }
 
-footer p {
-  margin: 0 auto;
-  font-size: xx-large;
+.likes {
+  margin-left: 0.5rem;
 }
